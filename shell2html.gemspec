@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["mose"]
   spec.email         = ["mose@mose.com"]
   spec.summary       = %q{A ruby lib for transforming bash colors into html.}
-  spec.description   = %q{A ruby lib for transforming bash colors into html. Parses escape chars an output spans.}
-  spec.homepage      = ""
+  spec.description   = %q{A ruby lib for transforming bash colors into html. Parses escape chars an output sp.}
+  spec.homepage      = "https://github.com/mose/shell2html"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

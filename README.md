@@ -1,9 +1,12 @@
-# Shell2html
+Shell2html
+===============
 
-TODO: Write a gem description
+A ruby lib for conversion between bash colors and HTML.
 
-## Installation
+Code is still experimental, use at your own risk.
 
+Installation
+-------------------
 Add this line to your application's Gemfile:
 
     gem 'shell2html'
@@ -16,14 +19,26 @@ Or install it yourself as:
 
     $ gem install shell2html
 
-## Usage
+Usage
+-----------------
 
-TODO: Write usage instructions here
+Commandline command
+-------------------
+There is a command `shell2html` provided in this lib for commandline execution.
 
-## Contributing
+    shell2html <file>
+    echo "\e[31mPrompt: \e[0m" | shell2html
 
-1. Fork it ( https://github.com/[my-github-username]/shell2html/fork )
+The html is output in stdout.
+
+Contributing
+-----------------
+1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+Copyright
+----------------
+(c) Copyright 2014 mose. Distributed under MIT license

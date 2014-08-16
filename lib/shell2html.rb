@@ -1,5 +1,17 @@
-require "shell2html/version"
-
 module Shell2html
-  # Your code goes here...
+
+  module_function
+
+  def to_html(text)
+  end
+
+  def to_css(text)
+  end
+
+  def to_sass(text)
+  end
+
+  def to_scss(text)
+  end
+
 end
