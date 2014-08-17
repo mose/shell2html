@@ -1,6 +1,14 @@
 Shell2html
 ===============
 
+[![Gem Version](https://img.shields.io/gem/v/shell2html.svg)](http://rubygems.org/gems/shell2html)
+[![Build Status](https://img.shields.io/travis/mose/shell2html.svg)](https://travis-ci.org/mose/shell2html)
+[![Coverage Status](https://img.shields.io/coveralls/mose/shell2html.svg)](https://coveralls.io/r/mose/shell2html?branch=master)
+[![Dependency Status](https://img.shields.io/gemnasium/mose/shell2html.svg)](https://gemnasium.com/mose/shell2html)
+[![Code Climate](https://img.shields.io/codeclimate/github/mose/shell2html.svg)](https://codeclimate.com/github/mose/shell2html)
+
+----
+
 A ruby lib for conversion between bash colors and HTML.
 
 Code is still experimental, use at your own risk.
