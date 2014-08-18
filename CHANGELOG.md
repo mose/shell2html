@@ -1,6 +1,9 @@
 Shell to HTML
 ==================
 
+v0.0.3 - wip
+--------------------
+
 v0.0.2 - 2014-08-19
 --------------------
 - add conversion of spaces and linefeeds
