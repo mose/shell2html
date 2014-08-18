@@ -46,13 +46,16 @@ module Shell2html
   }
 
   def to_html(text, inline = false)
+    count = 0
     text.gsub!(/\n/, '<br>')
     text.gsub!(/  /, ' &nbsp;')
     text.split(27.chr).map do |e|
       if /^\[([0-9;]+)m(.*)$/.match e
         case $1
         when '0'
-          "</span>#{$2}"
+          span = '</span>' * count
+          count = 0
+          "#{span}#{$2}"
         else
           key = $1
           t = $2
@@ -69,13 +72,16 @@ module Shell2html
                 end
                 o
               end.flatten.join(';')
-              "<span style=\"#{span_style}\">#{t}"
+              count = 1
+              "#{'</span>' * count}<span style=\"#{span_style}\">#{t}"
             else
+              count = 1
               span_class = css.map { |c| c[:css] }.join(' ')
-              "<span class=\"#{span_class}\">#{t}"
+              "#{'</span>' * count}<span class=\"#{span_class}\">#{t}"
             end
           else
-            "<span>#{t}"
+            count = 1
+            "#{'</span>' * count}<span>#{t}"
           end
         end
       else
