@@ -46,16 +46,19 @@ module Shell2html
   }
 
   def to_html(text, inline = false)
+    text.gsub!(/\n/, '<br>')
+    text.gsub!(/  /, ' &nbsp;')
     text.split(27.chr).map do |e|
       if /^\[([0-9;]+)m(.*)$/.match e
         case $1
         when '0'
           "</span>#{$2}"
         else
+          key = $1
           t = $2
           css = []
-          $1.split(';').each do |i|
-            css << COLORS["#{i}"] if COLORS["#{i}"]
+          key.split(';').each do |i|
+            css << COLORS["#{i.to_i}"] if COLORS["#{i.to_i}"]
           end
           if css.count > 0
             if inline
@@ -81,7 +84,16 @@ module Shell2html
     end.join
   end
 
-  def to_css(text)
+  def css
+    back = []
+    COLORS.each do |_, c|
+      o = []
+      css = c[:style].each do |k, v|
+        o << "#{k}:#{v}"
+      end
+      back << ".#{c[:css]} { #{o.join(';')} }"
+    end
+    back.join("\n")
   end
 
   def to_sass(text)
