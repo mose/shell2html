@@ -1,8 +1,10 @@
 Shell to HTML
 ==================
 
-v0.0.5 - wip
+v0.0.5 - 2014-08-19
 -------------------
+- added a link on urls with a custom style
+- also added a hover on links
 
 v0.0.4 - 2014-08-19
 --------------------

@@ -5,7 +5,7 @@ module Shell2html
   COLORS = {
     "1"   => { css: "sh_bold",            style: { "font-weight" => "bold" } },
     "2"   => { css: "sh_dim",             style: { "opacity" => ".5" } },
-    "4"   => { css: "sh_underlined",      style: { "text-decoration" => "underline" } },
+    "4"   => { css: "sh_underlined",      style: { "border-bottom" => "1px solid rgba(255,255,255,.6)", "padding-bottom" => "1px" } },
     "5"   => { css: "sh_blink",           style: { "text-decoration" => "blink" } },
     "7"   => { css: "sh_inverted",        style: { "font-weight" => "bold" } },
     "8"   => { css: "sh_hidden",          style: { "opacity" => "0" } },
@@ -42,12 +42,15 @@ module Shell2html
     "104" => { css: "sh_bg_lightblue",    style: { "background-color" => "#4682b4" } },
     "105" => { css: "sh_bg_lightmagenta", style: { "background-color" => "#ff00ff" } },
     "106" => { css: "sh_bg_lightcyan",    style: { "background-color" => "#00ffff" } },
-    "107" => { css: "sh_bg_white",        style: { "background-color" => "#ffffff" } }
+    "107" => { css: "sh_bg_white",        style: { "background-color" => "#ffffff" } },
+    "a"   => { css: "sh_a",               style: { "color" => "inherit", "text-decoration" => "inherit" } },
+    "ah"  => { css: "sh_a:hover",         style: { "background-color" => "#ffffff", "color" => "#000000" } }
   }
 
   def to_html(text, inline = false)
     count = 0
     text = CGI.escapeHTML(text)
+    text.gsub!(/(https?:\/\/[^'"\s\e\n<]*)/, "<a class=\"sh_a\" href=\"\\1\">\\1</a>")
     text.gsub!(/\n/, '<br>')
     text.gsub!(/  /, ' &nbsp;')
     text.split(27.chr).map do |e|
