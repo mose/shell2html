@@ -9,9 +9,9 @@ Shell2html
 
 ----
 
-A ruby lib for conversion between bash colors and HTML.
+A ruby lib for conversion between bash colors and HTML. It was created to help the Shellplay tool to export html from colored shell output.
 
-Code is still experimental, use at your own risk.
+Code is still experimental, use at your own risk. But "it works for me".
 
 Installation
 -------------------
@@ -30,14 +30,25 @@ Or install it yourself as:
 Usage
 -----------------
 
+````
+require "shell2html"
+
+puts Shell2html.to_html("\e[33m>\e[0m\e[1;31m some colored thing.\e[0m")
+````
+
 Commandline command
 -------------------
+
+(not functionnal yet)
+
 There is a command `shell2html` provided in this lib for commandline execution.
 
     shell2html <file>
     echo "\e[31mPrompt: \e[0m" | shell2html
 
 The html is output in stdout.
+
+An example of usage is visible on http://mose.com/20140814-dokku/
 
 Contributing
 -----------------
