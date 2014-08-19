@@ -47,6 +47,7 @@ module Shell2html
 
   def to_html(text, inline = false)
     count = 0
+    text = CGI.escapeHTML(text)
     text.gsub!(/\n/, '<br>')
     text.gsub!(/  /, ' &nbsp;')
     text.split(27.chr).map do |e|
