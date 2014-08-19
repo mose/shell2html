@@ -2,6 +2,7 @@ Shell2html
 ===============
 
 [![Gem Version](https://img.shields.io/gem/v/shell2html.svg)](http://rubygems.org/gems/shell2html)
+[![Downloads](http://img.shields.io/gem/dt/shell2html.svg)](https://rubygems.org/gems/shell2html)
 [![Build Status](https://img.shields.io/travis/mose/shell2html.svg)](https://travis-ci.org/mose/shell2html)
 [![Coverage Status](https://img.shields.io/coveralls/mose/shell2html.svg)](https://coveralls.io/r/mose/shell2html?branch=master)
 [![Dependency Status](https://img.shields.io/gemnasium/mose/shell2html.svg)](https://gemnasium.com/mose/shell2html)
@@ -9,9 +10,9 @@ Shell2html
 
 ----
 
-A ruby lib for conversion between bash colors and HTML. It was created to help the Shellplay tool to export html from colored shell output.
+A ruby lib for conversion between bash colors and HTML. It was created to help the [Shellplay](https://github.com/mose/shellplay) tool to export html from colored shell output.
 
-Code is still experimental, use at your own risk. But "it works for me".
+Code is still experimental, use at your own risk. But "it works for me". An example of usage is visible on http://mose.com/20140814-dokku/
 
 Installation
 -------------------
@@ -48,7 +49,6 @@ There is a command `shell2html` provided in this lib for commandline execution.
 
 The html is output in stdout.
 
-An example of usage is visible on http://mose.com/20140814-dokku/
 
 Contributing
 -----------------
