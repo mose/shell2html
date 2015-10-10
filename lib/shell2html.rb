@@ -67,6 +67,7 @@ module Shell2html
           key.split(';').each do |i|
             css << COLORS["#{i.to_i}"] if COLORS["#{i.to_i}"]
           end
+          count = 1
           if css.count > 0
             if inline
               span_style = css.map do |c|
@@ -76,15 +77,12 @@ module Shell2html
                 end
                 o
               end.flatten.join(';')
-              count = 1
               "#{'</span>' * count}<span style=\"#{span_style}\">#{t}"
             else
-              count = 1
               span_class = css.map { |c| c[:css] }.join(' ')
               "#{'</span>' * count}<span class=\"#{span_class}\">#{t}"
             end
           else
-            count = 1
             "#{'</span>' * count}<span>#{t}"
           end
         end
