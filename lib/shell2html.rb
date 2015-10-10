@@ -103,7 +103,7 @@ module Shell2html
       end
       back << ".#{c[:css]} { #{o.join(';')} }"
     end
-    back.join("\n")
+    back.join("\n") + "\n"
   end
 
   def to_sass(text)
