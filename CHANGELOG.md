@@ -1,7 +1,7 @@
-Shell to HTML
+shell2html
 ==================
 
-v0.0.6 - wip
+v0.0.6 - 2015-11-23
 -------------------
 - added a `shell2css` executable to render css
 - use `shell2css sass` to print out sass version of the css

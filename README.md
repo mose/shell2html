@@ -61,4 +61,4 @@ Contributing
 
 Copyright
 ----------------
-(c) Copyright 2014 mose. Distributed under MIT license
+(c) Copyright 2014-2015 mose. Distributed under MIT license
