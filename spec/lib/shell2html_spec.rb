@@ -34,9 +34,14 @@ describe Shell2html do
 
   end
 
-  describe 'css' do
+  describe '.css' do
     let(:expected) { File.read(File.expand_path('../../files/colors.css', __FILE__)) }
     it { expect(subject.css).to eq expected }
+  end
+
+  describe '.sass' do
+    let(:expected) { File.read(File.expand_path('../../files/colors.sass', __FILE__)) }
+    it { expect(subject.sass).to eq expected }
   end
 
 end

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+lib = File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
+require 'shell2html'
+
+if ARGV.count > 0 and ARGV[0] == 'sass'
+  puts Shell2html.sass
+else
+  puts Shell2html.css
+end

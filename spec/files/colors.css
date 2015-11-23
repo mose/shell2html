@@ -1,42 +1,42 @@
-.sh_bold { font-weight:bold }
-.sh_dim { opacity:.5 }
-.sh_underlined { border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:1px }
-.sh_blink { text-decoration:blink }
-.sh_inverted { font-weight:bold }
-.sh_hidden { opacity:0 }
-.sh_fg_default { color:#ffffff }
-.sh_fg_black { color:#000000 }
-.sh_fg_red { color:#cd0000 }
-.sh_fg_green { color:#00cd00 }
-.sh_fg_yellow { color:#cdcd00 }
-.sh_fg_blue { color:#1e90ff }
-.sh_fg_magenta { color:#cd00cd }
-.sh_fg_cyan { color:#00cdcd }
-.sh_fg_lightgray { color:#e5e5e5 }
-.sh_fg_darkgray { color:#4c4c4c }
-.sh_fg_lightred { color:#ff0000 }
-.sh_fg_lightgreen { color:#00ff00 }
-.sh_fg_lightyellow { color:#ffff00 }
-.sh_fg_lightblue { color:#4682b4 }
-.sh_fg_lightmagenta { color:#ff00ff }
-.sh_fg_lightcyan { color:#00ffff }
-.sh_fg_white { color:#ffffff }
-.sh_bg_default { background-color:#000000 }
-.sh_bg_black { background-color:#000000 }
-.sh_bg_red { background-color:#cd0000 }
-.sh_bg_green { background-color:#00cd00 }
-.sh_bg_yellow { background-color:#cdcd00 }
-.sh_bg_blue { background-color:#1e90ff }
-.sh_bg_magenta { background-color:#cd00cd }
-.sh_bg_cyan { background-color:#00cdcd }
-.sh_bg_lightgray { background-color:#e5e5e5 }
-.sh_bg_darkgray { background-color:#4c4c4c }
-.sh_bg_lightred { background-color:#ff0000 }
-.sh_bg_lightgreen { background-color:#00ff00 }
-.sh_bg_lightyellow { background-color:#ffff00 }
-.sh_bg_lightblue { background-color:#4682b4 }
-.sh_bg_lightmagenta { background-color:#ff00ff }
-.sh_bg_lightcyan { background-color:#00ffff }
-.sh_bg_white { background-color:#ffffff }
-.sh_a { color:inherit;text-decoration:inherit }
-.sh_a:hover { background-color:#ffffff;color:#000000 }
+.sh_bold { font-weight: bold }
+.sh_dim { opacity: .5 }
+.sh_underlined { border-bottom: 1px solid rgba(255,255,255,.6);padding-bottom: 1px }
+.sh_blink { text-decoration: blink }
+.sh_inverted { font-weight: bold }
+.sh_hidden { opacity: 0 }
+.sh_fg_default { color: #ffffff }
+.sh_fg_black { color: #000000 }
+.sh_fg_red { color: #cd0000 }
+.sh_fg_green { color: #00cd00 }
+.sh_fg_yellow { color: #cdcd00 }
+.sh_fg_blue { color: #1e90ff }
+.sh_fg_magenta { color: #cd00cd }
+.sh_fg_cyan { color: #00cdcd }
+.sh_fg_lightgray { color: #e5e5e5 }
+.sh_fg_darkgray { color: #4c4c4c }
+.sh_fg_lightred { color: #ff0000 }
+.sh_fg_lightgreen { color: #00ff00 }
+.sh_fg_lightyellow { color: #ffff00 }
+.sh_fg_lightblue { color: #4682b4 }
+.sh_fg_lightmagenta { color: #ff00ff }
+.sh_fg_lightcyan { color: #00ffff }
+.sh_fg_white { color: #ffffff }
+.sh_bg_default { background-color: #000000 }
+.sh_bg_black { background-color: #000000 }
+.sh_bg_red { background-color: #cd0000 }
+.sh_bg_green { background-color: #00cd00 }
+.sh_bg_yellow { background-color: #cdcd00 }
+.sh_bg_blue { background-color: #1e90ff }
+.sh_bg_magenta { background-color: #cd00cd }
+.sh_bg_cyan { background-color: #00cdcd }
+.sh_bg_lightgray { background-color: #e5e5e5 }
+.sh_bg_darkgray { background-color: #4c4c4c }
+.sh_bg_lightred { background-color: #ff0000 }
+.sh_bg_lightgreen { background-color: #00ff00 }
+.sh_bg_lightyellow { background-color: #ffff00 }
+.sh_bg_lightblue { background-color: #4682b4 }
+.sh_bg_lightmagenta { background-color: #ff00ff }
+.sh_bg_lightcyan { background-color: #00ffff }
+.sh_bg_white { background-color: #ffffff }
+.sh_a { color: inherit;text-decoration: inherit }
+.sh_a:hover { background-color: #ffffff;color: #000000 }

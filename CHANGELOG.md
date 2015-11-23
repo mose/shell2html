@@ -3,6 +3,9 @@ Shell to HTML
 
 v0.0.6 - wip
 -------------------
+- added a `shell2css` executable to render css
+- use `shell2css sass` to print out sass version of the css
+- made `shell2html` work with stdin or with a filename as argument
 
 v0.0.5 - 2014-08-19
 -------------------

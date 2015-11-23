@@ -1,3 +1,5 @@
+require 'cgi'
+
 module Shell2html
 
   module_function
@@ -97,17 +99,23 @@ module Shell2html
     COLORS.each do |_, c|
       o = []
       css = c[:style].each do |k, v|
-        o << "#{k}:#{v}"
+        o << "#{k}: #{v}"
       end
       back << ".#{c[:css]} { #{o.join(';')} }"
     end
     back.join("\n") + "\n"
   end
 
-  def to_sass(text)
-  end
-
-  def to_scss(text)
+  def sass
+    back = []
+    COLORS.each do |_, c|
+      o = []
+      back << ".#{c[:css]}"
+      c[:style].each do |k, v|
+        back << "  #{k}: #{v}"
+      end
+    end
+    back.join("\n") + "\n"
   end
 
 end

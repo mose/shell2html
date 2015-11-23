@@ -5,5 +5,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'shell2html'
 
-puts "Nothing there yet."
-puts Shell2html.css
+if ARGV.count > 0
+  file = ARGV[0]
+  if !File.exists? file
+    puts "File #{file} Not found"
+    exit(1)
+  end
+  puts Shell2html.to_html(File.read(file))
+else
+  txt = $stdin.read
+  puts Shell2html.to_html(txt)
+end
+

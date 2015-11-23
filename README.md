@@ -40,8 +40,6 @@ puts Shell2html.to_html("\e[33m>\e[0m\e[1;31m some colored thing.\e[0m")
 Commandline command
 -------------------
 
-(not functionnal yet)
-
 There is a command `shell2html` provided in this lib for commandline execution.
 
     shell2html <file>
@@ -49,6 +47,9 @@ There is a command `shell2html` provided in this lib for commandline execution.
 
 The html is output in stdout.
 
+Another command `shell2css` will print out the CSS associated with the generated html.
+
+Use `shell2css sass` to generate a Sass version instead.
 
 Contributing
 -----------------
